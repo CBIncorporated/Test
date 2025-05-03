@@ -4,7 +4,7 @@ body {
   background-color: #121212;
   color: #f0f0f0;
   line-height: 1.6;
-}
+} 
 
 header {
   background: #1f1f1f;
@@ -15,7 +15,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5rem;
-  color: #00ffd5;
+  color: #10ffd5;
 }
 
 header p {
