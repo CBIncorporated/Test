@@ -4,43 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PixelWraps | FiveM Livery Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>🚗 PixelWraps</h1>
-    <p>Affordable, clean custom liveries for your FiveM server</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>PixelWraps</h1>
+      <p>Your go-to for affordable and high-quality FiveM liveries</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
   </header>
 
-  <section class="services">
-    <h2>🎨 What We Offer</h2>
-    <ul>
-      <li>🚓 Basic & custom vehicle liveries</li>
-      <li>🚚 Fleet packs with matching themes</li>
-      <li>🛠️ Light graphic branding (logos, badges)</li>
-      <li>📸 Optional cinematic screenshots</li>
-    </ul>
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>What We Offer</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Basic Liveries</h3>
+        <p>Affordable, quick liveries for all vehicles in your server.</p>
+      </div>
+      <div class="card">
+        <h3>Fleet Packs</h3>
+        <p>Complete sets of matching liveries for multiple vehicles.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Branding</h3>
+        <p>We create unique logos and branding for your server.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="pricing">
-    <h2>💰 Pricing</h2>
-    <ul>
-      <li><strong>Solo Skin:</strong> $5</li>
-      <li><strong>Mini Pack (3 cars):</strong> $10–$15</li>
-      <li><strong>Fleet Pack (5–6 cars):</strong> $25</li>
-      <li><strong>Full Bundle (10 cars + media):</strong> $35–$50</li>
-    </ul>
-    <p>Need something custom? <strong>DM for a quote.</strong></p>
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <h2>Pricing</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Solo Skin</h3>
+        <p>$5</p>
+        <p>1 custom livery for your vehicle.</p>
+      </div>
+      <div class="pricing-card">
+        <h3>Mini Pack</h3>
+        <p>$10–$15</p>
+        <p>3 custom liveries for different vehicles.</p>
+      </div>
+      <div class="pricing-card">
+        <h3>Fleet Pack</h3>
+        <p>$25</p>
+        <p>5–6 custom liveries for matching vehicles.</p>
+      </div>
+      <div class="pricing-card">
+        <h3>Full Bundle</h3>
+        <p>$35–$50</p>
+        <p>Complete branding package with vehicles + media.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>📬 Contact</h2>
-    <p>📧 Email: <a href="mailto:pixelwrapsfivem@gmail.com">pixelwrapsfivem@gmail.com</a></p>
-    <p>💬 Discord: <code>@YourDiscord#1234</code></p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:pixelwrapsfivem@gmail.com">pixelwrapsfivem@gmail.com</a></p>
+    <p>Discord: <code>@YourDiscord#1234</code></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 PixelWraps. All rights reserved.</p>
   </footer>
+
+  <!-- JS for smooth scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
